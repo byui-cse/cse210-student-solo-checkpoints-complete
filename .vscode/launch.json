@@ -1,0 +1,45 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "04-dice",
+            "type": "python",
+            "request": "launch",
+            "program": "dice",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/04-dice"
+        },
+        {
+            "name": "05-hide-and-seek",
+            "type": "python",
+            "request": "launch",
+            "program": "hide_and_seek",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/05-hide-and-seek"
+        },
+        {
+            "name": "06-nim",
+            "type": "python",
+            "request": "launch",
+            "program": "nim",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/06-nim"
+        },
+        {
+            "name": "07-snake",
+            "type": "python",
+            "request": "launch",
+            "program": "snake",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/07-snake"
+        },
+        {
+            "name": "08-rfk",
+            "type": "python",
+            "request": "launch",
+            "program": "rfk",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/08-rfk"
+        }
+    ]
+}
