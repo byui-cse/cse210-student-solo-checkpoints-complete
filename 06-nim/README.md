@@ -1,8 +1,5 @@
 # Nim
-Experience the thrill of the chase! <i>Hunter</i> might seem easy but even the 
-best get lost from time to time. The rules are simple. The hunter guesses the 
-prey's location and the prey provides a hint - that's confidence! Guessing 
-continues until the prey is found.
+A game of stones. Try to outsmart your opponent to be the last one to remove one!
 
 ## Getting Started
 ---
@@ -10,7 +7,7 @@ Make sure you have Python 3.8.0 or newer installed and running on your machine.
 Open a terminal and browse to the project's root folder. Start the program by 
 running the following command.
 ```
-python3 hunter 
+python3 nim 
 ```
 You can also run the program from an IDE like Visual Studio Code. Start your IDE 
 and open the project folder. Select the main module inside the hunter folder and 
@@ -21,7 +18,7 @@ click the "run" icon.
 The project files and folders are organized as follows:
 ```
 root                    (project root folder)
-+-- hunter              (source code for game)
++-- nim                 (source code for game)
   +-- game              (specific game classes)
   +-- __init__.py       (python package file)
   +-- __main__.py       (entry point for program)
