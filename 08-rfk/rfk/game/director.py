@@ -25,11 +25,15 @@ class Director:
         
     def start_game(self):
         """Starts the game loop to control the sequence of play."""
+        print("Starting Game...")
+
         while True:
             self._cue_action("input")
             self._cue_action("update")
             self._cue_action("output")
-            sleep(constants.FRAME_LENGTH)
+
+        print("Game over!")
+
 
     def _cue_action(self, tag):
         """Executes the actions with the given tag.
