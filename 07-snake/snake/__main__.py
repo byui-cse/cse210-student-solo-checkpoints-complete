@@ -8,4 +8,5 @@ def main():
     director = Director(input_service, output_service)
     director.start_game()
 
-main()
+if __name__ == "__main__":
+    main()

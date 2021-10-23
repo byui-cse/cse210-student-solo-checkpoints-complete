@@ -3,7 +3,7 @@ from game.actor import Actor
 from game.point import Point
 
 class ScoreBoard(Actor):
-    """Points earned. The responsibility of Score is to keep track of the player's points.
+    """Points earned. The responsibility of the ScoreBoard is to keep track of the player's points.
 
     Stereotype:
         Information Holder

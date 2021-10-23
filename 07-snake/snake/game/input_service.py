@@ -3,14 +3,14 @@ from game.point import Point
 import raylibpy
 
 class InputService:
-    """Detects player input. The responsibility of the class of objects is to detect player keypresses and translate them into a point representing a direction (or velocity).
+    """Detects player input. The responsibility of the class of objects is
+    to detect player keypresses and translate them into a point representing
+    a direction (or velocity).
 
     Stereotype: 
         Service Provider
 
     Attributes:
-        _screen (Screen): An Asciimatics screen.
-        _keys (Dict): A dictionary containing Points for U, D, L and R.
         _current (Point): The last direction that was pressed.
     """
 
@@ -44,16 +44,31 @@ class InputService:
         return self._current
 
     def is_left_pressed(self):
-        return raylibpy.is_key_pressed(raylibpy.KEY_LEFT)
+        """
+        Determines if the left key is currently being pushed
+        """
+        return raylibpy.is_key_down(raylibpy.KEY_LEFT)
 
     def is_right_pressed(self):
-        return raylibpy.is_key_pressed(raylibpy.KEY_RIGHT)
+        """
+        Determines if the right key is currently being pushed
+        """
+        return raylibpy.is_key_down(raylibpy.KEY_RIGHT)
 
     def is_up_pressed(self):
-        return raylibpy.is_key_pressed(raylibpy.KEY_UP)
+        """
+        Determines if the up key is currently being pushed
+        """
+        return raylibpy.is_key_down(raylibpy.KEY_UP)
 
     def is_down_pressed(self):
-        return raylibpy.is_key_pressed(raylibpy.KEY_DOWN)
+        """
+        Determines if the down key is currently being pushed
+        """
+        return raylibpy.is_key_down(raylibpy.KEY_DOWN)
 
     def window_should_close(self):
+        """
+        Determines if the user is trying to close the window
+        """
         return raylibpy.window_should_close()

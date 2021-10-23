@@ -69,6 +69,9 @@ class Point:
         return self._y
 
     def scale(self, factor):
+        """
+        Scales the point by the provided factor.
+        """
         return Point(self._x * factor, self._y * factor)
 
     def reverse(self):

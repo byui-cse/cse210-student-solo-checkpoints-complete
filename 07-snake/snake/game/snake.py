@@ -45,6 +45,9 @@ class Snake:
         return self._segments[1:]
 
     def get_collidable_segments(self):
+        """
+        Get's the part of the snake that can be collided with.
+        """
         return self._segments[self._collidable_index:]
 
     def get_head(self):
@@ -59,6 +62,9 @@ class Snake:
         return self._segments[0]
 
     def grow_tail(self, amount):
+        """
+        Grows the tail by the amount specified.
+        """
         grow_amount = amount * 10
 
         for i in range(grow_amount):

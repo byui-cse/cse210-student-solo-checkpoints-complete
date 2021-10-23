@@ -25,10 +25,12 @@ class Food(Actor):
         # First, make sure anything from the base class gets initialized
         super().__init__()
 
-        self._points = 0
+        self.points = 0
         self.set_text("0")
-        self._width = constants.DEFAULT_SQUARE_LENGTH
-        self._height = constants.DEFAULT_SQUARE_LENGTH
+
+        self.set_height(constants.DEFAULT_SQUARE_LENGTH)
+        self.set_width(constants.DEFAULT_SQUARE_LENGTH)
+
         self.reset()
     
     def get_points(self):
@@ -51,10 +53,10 @@ class Food(Actor):
             self (Food): an instance of Food.
         """
         self._points = random.randint(1, 10)
+        self.set_text(str(self._points))
+        
         x = random.randint(1, constants.MAX_X - 2)
         y = random.randint(1, constants.MAX_Y - 2)
         position = Point(x, y)
         self.set_position(position)
 
-        self.set_text(str(self._points))
-        
