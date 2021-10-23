@@ -6,11 +6,11 @@ myself!
 
 ## Getting Started
 ---
-Make sure you have Python 3.8.0 or newer and asciimatics 1.12.0 or new installed 
-and running on your machine. You can install Asciimatics by opening a terminal 
+Make sure you have Python 3.8.0 or newer and RayLib-py installed 
+and running on your machine. You can install RayLib-py by opening a terminal 
 and running the following command.
 ```
-python3 -m pip install asciimatics
+python3 -m pip install raylip-py
 ```
 After you've installed the required libraries, open a terminal and browse to the 
 project's root folder. Start the program by running the following command.
@@ -36,8 +36,9 @@ root                    (project root folder)
 ## Required Technologies
 ---
 * Python 3.8.0
-* Asciimatics 1.12.0
+* RayLib-py
 
 ## Authors
 ---
 * Matt Manley (manleym@byui.edu)
+* Scott Burton (burtons@byui.edu)
