@@ -69,6 +69,17 @@ class Point:
         return self._y
 
     def scale(self, factor):
+        """
+        Scales the point by the provided factor.
+
+        Args:
+            self (Point): An instance of Point.
+            factor (int): The amount to scale.
+            
+        Returns:
+            Point: A new Point that is scaled.
+
+        """
         return Point(self._x * factor, self._y * factor)
 
     def reverse(self):
@@ -83,4 +94,7 @@ class Point:
         return self.scale(-1)
 
     def is_zero(self):
+        """
+        Returns True if both the x and y coordinate are 0.
+        """
         return self._x == 0 and self._y == 0

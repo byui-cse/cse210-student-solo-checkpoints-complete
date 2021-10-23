@@ -2,10 +2,16 @@ from game.actor import Actor
 import raylibpy
 
 class PhysicsService:
+    """
+    Used for actions relating to Physics, such as determining collisions.
+    """
     def __init__(self):
         pass
 
     def is_collision(self, first, second):
+        """
+        Returns true if the two items are currently intersecting.
+        """
         x1 = first.get_position().get_x()
         y1 = first.get_position().get_y()
         width1 = first.get_width()

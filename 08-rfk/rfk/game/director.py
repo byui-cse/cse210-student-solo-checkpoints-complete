@@ -1,4 +1,6 @@
 from time import sleep
+
+import raylibpy
 from game import constants
 
 class Director:
@@ -22,17 +24,17 @@ class Director:
         """
         self._cast = cast
         self._script = script
+        self._keep_playing = True
         
     def start_game(self):
         """Starts the game loop to control the sequence of play."""
-        print("Starting Game...")
-
-        while True:
+        while self._keep_playing:
             self._cue_action("input")
             self._cue_action("update")
             self._cue_action("output")
 
-        print("Game over!")
+            if raylibpy.window_should_close():
+                self._keep_playing = False
 
 
     def _cue_action(self, tag):

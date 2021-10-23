@@ -2,6 +2,9 @@ from game.actor import Actor
 from game import constants
 
 class Artifact(Actor):
+    """
+    Defines an artifact in the game. Inherits from Actor, and adds a description.
+    """
     def __init__(self):
         super().__init__()
 
@@ -16,4 +19,7 @@ class Artifact(Actor):
         self._description = description
 
     def has_description(self):
+        """
+        Returns true if the description is not "".
+        """
         return self._description != ""

@@ -12,6 +12,8 @@ class Actor:
         _text (string): The textual representation of the actor.
         _position (Point): The actor's position in 2d space.
         _velocity (Point): The actor's speed and direction.
+        _width (int): The actor's width
+        _height (int): The actor's height
     """
 
     def __init__(self):

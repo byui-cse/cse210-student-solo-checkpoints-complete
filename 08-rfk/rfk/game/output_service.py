@@ -9,7 +9,7 @@ class OutputService:
         Service Provider
 
     Attributes:
-        _screen (Screen): An Asciimatics screen.
+        None
     """
 
     def __init__(self):
@@ -17,10 +17,12 @@ class OutputService:
         
         Args:
             self (OutputService): An instance of OutputService.
-            screen (Screen): An Asciimatics Screen.
         """
 
     def open_window(self, title):
+        """
+        Opens a new window with the provided title.
+        """
         raylibpy.init_window(constants.MAX_X, constants.MAX_Y, title)
         raylibpy.set_target_fps(constants.FRAME_RATE)
         
@@ -34,9 +36,15 @@ class OutputService:
         raylibpy.clear_background(raylibpy.WHITE)
 
     def draw_box(self, x, y, width, height):
+        """
+        Draws at rectangular box with the provided specifications.
+        """
         raylibpy.draw_rectangle(x, y, width, height, raylibpy.BLUE)
 
     def draw_text(self, x, y, text, is_dark_text):
+        """
+        Outputs the provided text at the desired location.
+        """
         color = raylibpy.WHITE
 
         if is_dark_text:

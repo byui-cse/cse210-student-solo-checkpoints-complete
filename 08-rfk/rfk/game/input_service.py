@@ -23,8 +23,7 @@ class InputService:
         pass
         
     def get_direction(self):
-        """Gets the selected direction. If one hasn't been selected the last 
-        one is returned.
+        """Gets the selected direction based on the currently pressed keys.
 
         Args:
             self (InputService): An instance of InputService.
